@@ -14,4 +14,11 @@ else
   tmux set -g window-status-current-style "fg=#8C7D71,bg=#fbf6e4"
 fi
 
+if [ "$mode" = "Dark" ]; then
+  tmux set -g @hint-color "#7f849c"
+else
+  tmux set -g @hint-color "#DCC8A3"
+fi
+
+
 tmux refresh-client -S
